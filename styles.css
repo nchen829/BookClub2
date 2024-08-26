@@ -1,4 +1,94 @@
 body {
+  font-family: "Source Sans Pro";
+}
+
+.nav-bar-one ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar-one ul li {
+  position: relative;
+}
+
+.nav-bar-one ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-bar-one ul li:hover > a {
+  color: #F2873C;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #F2873C;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 300px;
+  z-index: 1;
+}
+
+.popup h2 {
+  color: #F2873C;
+  margin-bottom: 10px;
+}
+
+.genres-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genres-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genres-list ul li {
+  margin: 5px 0;
+  color: #4B2C2C;
+}
+
+.view-more {
+  background-color: #F2873C;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.explore-books:hover .popup {
+  display: block;
+}
+
+.popup::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+
+body {
   margin: 0;
 }
 
@@ -296,7 +386,6 @@ body {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #FFD1D2;
   padding: 10px;
   gap: 10px;
