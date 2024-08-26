@@ -14,19 +14,47 @@
         </div>
         <div class="sign-up">
           <a href="#" class="sign-in-btn">Sign In</a>
-          <a href="#" class="sign-up-btn">Sign Up</a>
+          <a href="signuppage.html" class="sign-up-btn">Sign Up</a>
             <img src="Images/account_circle_24dp_FFFFFE_FILL0_wght400_GRAD0_opsz24.svg"/>
         </div>
       </header>
       <nav class="nav-bar-one">
         <ul>
           <li><a href="Home.html">HOME</a></li>
-          <li><a href="Explore Books">EXPLORE BOOKS </a></li>
-          <li><a href="Book Clubs">BOOK CLUBS</a></li>
+          <li class="explore-books">
+              <a href="#">EXPLORE BOOKS</a>
+              <!-- Popup Genre List -->
+              <div class="popup">
+                  <h2>Genres</h2>
+                  <div class="genres-list">
+                      <ul>
+                          <li>Adventure</li>
+                          <li>Biography</li>
+                          <li>Classics</li>
+                          <li>Crime</li>
+                          <li>Fantasy</li>
+                          <li>Historical Fiction</li>
+                          <li>Horror</li>
+                          <li>Mystery</li>
+                      </ul>
+                      <ul>
+                          <li>Non-Fiction</li>
+                          <li>Poetry</li>
+                          <li>Romance</li>
+                          <li>Science Fiction</li>
+                          <li>Thriller</li>
+                          <li>Travel</li>
+                          <li>Young Adult</li>
+                      </ul>
+                  </div>
+                  <button class="view-more">VIEW MORE</button>
+              </div>
+          </li>
+          <li><a href="bookclubindex.html">BOOK CLUBS</a></li>
           <li><a href="Reviews">REVIEWS</a></li>
-          <li><a href="Contacts">CONTATCS</a></li>
-        </ul>
-        </nav>
+          <li><a href="Contacts">CONTACTS</a></li>
+      </ul>
+  </nav>
       <div id="search">
         <input type="text" placeholder="Search books" />
         <button type="submit">SEARCH</button>
